@@ -8,7 +8,9 @@ import json
 connection = None
 try:
     os.environ['PATH'] = config.ENV_CONFIG['path']
-    connection = cx_Oracle.connect(config.DATABASE_CONFIG['user'], config.DATABASE_CONFIG['password'], config.DATABASE_CONFIG['host'])
+    connection = cx_Oracle.connect(config.DATABASE_CONFIG_SYS2K['user'], 
+                                   config.DATABASE_CONFIG_SYS2K['password'], 
+                                   config.DATABASE_CONFIG_SYS2K['host'])
     cur = connection.cursor()
     cur.execute("SELECT CURRENT_TIMESTAMP FROM DUAL")
     col = cur.fetchone()[0]
