@@ -13,3 +13,7 @@ DATABASE_CONFIG_PF = {
 ENV_CONFIG = {
     'path': "C:\python\Python37\instantclient_19_5"
 }
+
+ENV_LOG = {
+    'path': "C:/logs/demo.log"
+}
