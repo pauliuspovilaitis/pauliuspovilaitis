@@ -1,13 +1,14 @@
 #!/usr/bin/python
 
-import os
-from datetime import datetime
-import cx_Oracle
 import logging
-from logging.handlers import RotatingFileHandler
-from flask import Flask, jsonify, request
-import config
+import os
 import socket
+from logging.handlers import RotatingFileHandler
+
+import cx_Oracle
+from flask import Flask, jsonify, request
+
+import config
 
 app = Flask(__name__)
 os.environ['PATH'] = config.ENV_CONFIG['path']
