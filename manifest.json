@@ -2,18 +2,11 @@
     "short_name": "Professional Information Technology Services",
     "name": "Professional Information Technology Services",
     "icons": [{
-            "src": "favicon.ico",
-            "type": "image/png",
-            "sizes": "48x48",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "favicon.ico",
-            "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "any maskable"
-        }
-    ],
+        "src": "favicon.ico",
+        "type": "image/x-icon",
+        "sizes": "64x64 32x32 24x24 16x16 48x48 512x512",
+        "purpose": "any maskable"
+    }],
     "start_url": "/index.html",
     "display": "standalone",
     "theme_color": "#d3d9dc",
