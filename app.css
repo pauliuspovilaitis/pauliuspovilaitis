@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
-    color: #717171;
+    color: #fd5e21;
+    text-shadow: 2px 2px #d3d9dc;
 }
 
 #cloud {
@@ -35,7 +36,7 @@ h1 {
         max-width: 100% !important;
     }
     p {
-    orphans: 3;
+        orphans: 3;
         widows: 3;
     }
 }
@@ -78,7 +79,6 @@ a {
         width: 1170px;
     }
 }
-
 
 #prototype {
     background-color: #f4f4f4;
