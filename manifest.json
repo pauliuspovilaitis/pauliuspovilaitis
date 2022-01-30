@@ -1,0 +1,13 @@
+{
+    "short_name": "Professional Information Technology Services",
+    "name": "Professional Information Technology Services",
+    "icons": [{
+        "src": "favicon.ico",
+        "type": "image/png",
+        "sizes": "48x48"
+    }],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "theme_color": "#d3d9dc",
+    "background_color": "#d3d9dc"
+}
