@@ -59,7 +59,7 @@ p {
 }
 
 a {
-    color: #717171;
+    color: #000;
 }
 
 @media (min-width:768px) {
@@ -82,7 +82,7 @@ a {
 
 #prototype {
     background-color: #f4f4f4;
-    color: #717171;
+    color: #000;
 }
 
 .prototype {
