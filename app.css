@@ -4,6 +4,11 @@ h1 {
     text-shadow: 2px 2px #d3d9dc;
 }
 
+.logo {
+    margin: 10px auto 20px;
+    display: block;
+}
+
 #cloud {
     height: 90%;
     width: 90%;
