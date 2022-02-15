@@ -1,0 +1,2323 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "SYS2K and ProFlow API",
+    "version": "v1"
+  },
+  "paths": {
+    "/pf/certificate_types": {
+      "get": {
+        "tags": [
+          "certificate_types"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ID": {
+                      "type": "string"
+                    },
+                    "STD_SEQNO": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/coatings": {
+      "get": {
+        "tags": [
+          "coatings"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "BOTTOM_SIDE": {
+                      "type": "string"
+                    },
+                    "COLOUR": {
+                      "type": "string"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "TOP_SIDE": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/edge_types": {
+      "get": {
+        "tags": [
+          "edge_types"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "MASTER_CODE": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/elements": {
+      "get": {
+        "tags": [
+          "elements"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "INTSORTNO": {
+                      "type": "integer"
+                    },
+                    "SORTNO": {
+                      "type": "integer"
+                    },
+                    "TYPE": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/finishes": {
+      "get": {
+        "tags": [
+          "finishes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/grindings": {
+      "get": {
+        "tags": [
+          "grindings"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "GRINDED": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/ingot_types": {
+      "get": {
+        "tags": [
+          "ingot_types"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ID": {
+                      "type": "string"
+                    },
+                    "WEIGHT": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/icd_prs": {
+      "get": {
+        "tags": [
+          "icd_prs"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ICD_DIAMETER": {
+                      "type": "integer"
+                    },
+                    "PRS_ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/inspection_authority": {
+      "get": {
+        "tags": [
+          "inspection_authority"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "GOVERNMENT_INSPEC_AUTH": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "MASTER_CODE": {
+                      "type": "string"
+                    },
+                    "NAME": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/manufacturing_groups": {
+      "get": {
+        "tags": [
+          "manufacturing_groups"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "MANUFACTURING_LEAD_TIME": {
+                      "type": "integer"
+                    },
+                    "PRODUCTIVITY": {
+                      "type": "integer"
+                    },
+                    "PRS_ID": {
+                      "type": "string"
+                    },
+                    "YIELD": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/measure_types": {
+      "get": {
+        "tags": [
+          "measure_types"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/melting_codes": {
+      "get": {
+        "tags": [
+          "melting_codes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "BLOCKED": {
+                      "type": "string"
+                    },
+                    "BLOCK_DATE": {
+                      "type": "string"
+                    },
+                    "BLOCK_REMARK": {
+                      "type": "string"
+                    },
+                    "CONSUMPTION_TONNE_PER_WEEK": {
+                      "type": "string"
+                    },
+                    "COST": {
+                      "type": "integer"
+                    },
+                    "DENSITY": {
+                      "type": "number"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "MCS_ID": {
+                      "type": "string"
+                    },
+                    "MEC_ID": {
+                      "type": "string"
+                    },
+                    "STG_ID_MCC": {
+                      "type": "string"
+                    },
+                    "STG_ID_PKA": {
+                      "type": "string"
+                    },
+                    "TRADE_NAME": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/slab_types": {
+      "get": {
+        "tags": [
+          "slab_types"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "RATING": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/product_types": {
+      "get": {
+        "tags": [
+          "product_types"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/property_forms": {
+      "get": {
+        "tags": [
+          "property_forms"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/process_steps": {
+      "get": {
+        "tags": [
+          "process_steps"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "AUTO_INIT": {
+                      "type": "string"
+                    },
+                    "AVAILABILITY": {
+                      "type": "integer"
+                    },
+                    "CALCULATE_LOAD": {
+                      "type": "string"
+                    },
+                    "DECISION_OFFSET": {
+                      "type": "integer"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "DEVIATION_REPORT_TIME_OFFSET": {
+                      "type": "integer"
+                    },
+                    "FROZEN_INITIATED_PRODUCT": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "LOAD_CONTROLLED": {
+                      "type": "string"
+                    },
+                    "LOC_ID": {
+                      "type": "string"
+                    },
+                    "NO_AUTO_CAMP_CLOSE": {
+                      "type": "string"
+                    },
+                    "ORDER_COVERAGE_MEASURED": {
+                      "type": "string"
+                    },
+                    "ORDER_INFORMATION_TRANSFORMED": {
+                      "type": "string"
+                    },
+                    "ORU_ID": {
+                      "type": "string"
+                    },
+                    "PRP_ID": {
+                      "type": "string"
+                    },
+                    "PR_ALLOWED": {
+                      "type": "string"
+                    },
+                    "SEND_PRODUCT_TYPE": {
+                      "type": "string"
+                    },
+                    "SHORT_DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "SORTNO": {
+                      "type": "integer"
+                    },
+                    "STANDARD_BATCH_SIZE": {
+                      "type": "integer"
+                    },
+                    "STANDARD_DELAY": {
+                      "type": "integer"
+                    },
+                    "STAND_PRODUCTIVITY": {
+                      "type": "integer"
+                    },
+                    "TOP_LEVEL": {
+                      "type": "string"
+                    },
+                    "TRN_ID_ARR": {
+                      "type": "string"
+                    },
+                    "TRN_ID_DEP": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/production_paths": {
+      "get": {
+        "tags": [
+          "production_paths"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "CAPACITY_PLAN_PRS_ID": {
+                      "type": "string"
+                    },
+                    "DELIVERY_TOL_MAX": {
+                      "type": "integer"
+                    },
+                    "DELIVERY_TOL_MIN": {
+                      "type": "integer"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "EXPIRE_DATE_OFFSET": {
+                      "type": "integer"
+                    },
+                    "ICO_ORU_ID": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "INSPECTION_LEADTIME": {
+                      "type": "integer"
+                    },
+                    "ORU_ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/products": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "BLOCK_UNBLOCK": {
+                      "type": "string"
+                    },
+                    "DEC_ID": {
+                      "type": "string"
+                    },
+                    "EDT_ID": {
+                      "type": "string"
+                    },
+                    "FIN_ID": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "integer"
+                    },
+                    "INT_ID": {
+                      "type": "string"
+                    },
+                    "LENGTH_FROM": {
+                      "type": "string"
+                    },
+                    "LENGTH_TO": {
+                      "type": "string"
+                    },
+                    "MEC_ID_MCC": {
+                      "type": "string"
+                    },
+                    "MEC_ID_PKA": {
+                      "type": "string"
+                    },
+                    "PRF_ID": {
+                      "type": "string"
+                    },
+                    "PROFLOW_CREATE": {
+                      "type": "string"
+                    },
+                    "PRY_ID": {
+                      "type": "string"
+                    },
+                    "SRE_ID": {
+                      "type": "string"
+                    },
+                    "SUR_ID": {
+                      "type": "string"
+                    },
+                    "THICKNESS_FROM": {
+                      "type": "integer"
+                    },
+                    "THICKNESS_TO": {
+                      "type": "integer"
+                    },
+                    "VALID_TO": {
+                      "type": "string"
+                    },
+                    "WIDTH_FROM": {
+                      "type": "integer"
+                    },
+                    "WIDTH_TO": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/process_routes": {
+      "get": {
+        "tags": [
+          "process_routes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ALLOCATION_LEVEL": {
+                      "type": "string"
+                    },
+                    "ALLOC_RESTRICTION": {
+                      "type": "string"
+                    },
+                    "AREA_ALLOCATION": {
+                      "type": "string"
+                    },
+                    "BATCH_SIZE_MAXIMUM": {
+                      "type": "integer"
+                    },
+                    "BATCH_SIZE_MINIMUM": {
+                      "type": "integer"
+                    },
+                    "BLOCK_UNBLOCK": {
+                      "type": "string"
+                    },
+                    "CAO_ID": {
+                      "type": "string"
+                    },
+                    "CLASSIFICATION": {
+                      "type": "integer"
+                    },
+                    "CONSUMPTION_TONNE_PER_WEEK": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "DIAGONAL_DEVIATION": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "EDGE_STRAIGHTNESS": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "FLATNESS_LONGITUD": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "FLATNESS_TRANSVERS": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "GRI_ID": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "HIRED_WORK": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "INNER_DIAMETER_TOLERANCE_MAX": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "INNER_DIAMETER_TOLERANCE_MIN": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "INTERNAL_USE_ONLY": {
+                      "type": "string"
+                    },
+                    "LENGTH_TOLERANCE_MAX": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "LENGTH_TOLERANCE_MIN": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "LOCAL_CLASSIFICATION": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "LOC_ID": {
+                      "type": "string"
+                    },
+                    "MAX_NO_OF_CASTS": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "MAX_REDUCTION": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "MIN_REDUCTION": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "ORDER_ENTRY_CLASS": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "OUTER_DIAMETER_TOLERANCE_MAX": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "OUTER_DIAMETER_TOLERANCE_MIN": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "PID_ID": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "PID_ID_PARENT": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "PRIORITY": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "PROFLOW_CREATE": {
+                      "type": "string"
+                    },
+                    "PTM_ID": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "PTT_SEARCH_INTERVALL_DAYS": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "ROUTE_TO_MARKET": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "SLT_ID": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "THICKNESS_AIM": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "THICKNESS_CAPABILITY": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "THICKNESS_TOLERANCE_MAX": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "THICKNESS_TOLERANCE_MIN": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "VALID_TO": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "WIDTH_AIM": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "WIDTH_TOLERANCE_MAX": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "WIDTH_TOLERANCE_MIN": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "YIELD": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "YIELD_ORDER_ALLOCATION": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/process_route_details": {
+      "get": {
+        "tags": [
+          "process_route_details"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "GRINDING_OPTIONAL": {
+                      "type": "string"
+                    },
+                    "MANUFACTURING_COST": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "MFG_ID": {
+                      "type": "string"
+                    },
+                    "MFG_PRS_ID": {
+                      "type": "string"
+                    },
+                    "PRC_ID": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "PRC_PID_ID": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "PRODUCTIVITY": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "STANDARD_LEAD_TIME": {
+                      "type": "string",
+                      "format": "nullable"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/product_mark_instr": {
+      "get": {
+        "tags": [
+          "product_mark_instr"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ALLOWED_IN_LINE": {
+                      "type": "string"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/organisation_units": {
+      "get": {
+        "tags": [
+          "organisation_units"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "CTY_ISO_CODE": {
+                      "type": "string"
+                    },
+                    "GRS_CODE": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "LOC_ID": {
+                      "type": "string"
+                    },
+                    "MASTER_CODE": {
+                      "type": "string"
+                    },
+                    "MATERIALIDTYPE": {
+                      "type": "string"
+                    },
+                    "NAME": {
+                      "type": "string"
+                    },
+                    "PRN_SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "PRN_SEQNO_2": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "PRP_ID": {
+                      "type": "string"
+                    },
+                    "RECEIVE_FWD_DESPATCH": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "RECEIVE_MELT_CODES": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "RECEIVE_UNINITIATE_PROD": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "REPORTS_DESPATCH": {
+                      "type": "string"
+                    },
+                    "RPS_ID": {
+                      "type": "string"
+                    },
+                    "SHORT_DESCRIPTION": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "SIT_SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "WITHIN_ORU_ID": {
+                      "type": "string",
+                      "format": "nullable"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/special_requirements": {
+      "get": {
+        "tags": [
+          "special_requirements"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/standard_steel_types": {
+      "get": {
+        "tags": [
+          "standard_steel_types"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/standards": {
+      "get": {
+        "tags": [
+          "standards"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "BP_SEQNO": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "DESCRIPTION1": {
+                      "type": "string"
+                    },
+                    "DESCRIPTION2": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "MASTER_CODE": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "STANDARD_TYPE": {
+                      "type": "string"
+                    },
+                    "STD_SEQNO_CERT": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "WELDING_ALLOWED": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/standard_tol_entries": {
+      "get": {
+        "tags": [
+          "standard_tol_entries"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "BP_SEQNO": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "DESCRIPTION1": {
+                      "type": "string"
+                    },
+                    "DESCRIPTION2": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "MASTER_CODE": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "STANDARD_TYPE": {
+                      "type": "string"
+                    },
+                    "STD_SEQNO_CERT": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "WELDING_ALLOWED": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/standard_tol_classes": {
+      "get": {
+        "tags": [
+          "standard_tol_classes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DEFAULT_STANDARD": {
+                      "type": "string"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "EDT_ID": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "MET_ID": {
+                      "type": "string"
+                    },
+                    "PRY_ID": {
+                      "type": "string"
+                    },
+                    "SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "SST_ID": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "STD_SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/storing_locations": {
+      "get": {
+        "tags": [
+          "storing_locations"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "AUTO_MAINT_NOT_ALLOWED": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "KEEP_USER_RES": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "ORU_ID": {
+                      "type": "string"
+                    },
+                    "PRS_ID": {
+                      "type": "string"
+                    },
+                    "SPLIT_ALLOWED": {
+                      "type": "string"
+                    },
+                    "STOCK_IND": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "STOCK_LOCATION": {
+                      "type": "string"
+                    },
+                    "STOCK_TYPE": {
+                      "type": "string"
+                    },
+                    "STY_ID": {
+                      "type": "string"
+                    },
+                    "STY_SLO_ID": {
+                      "type": "string"
+                    },
+                    "VISIBLE": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/surfaces": {
+      "get": {
+        "tags": [
+          "surfaces"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/test_method_instr": {
+      "get": {
+        "tags": [
+          "test_method_instr"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "INSTRUCTION": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "PRY_ID": {
+                      "type": "string"
+                    },
+                    "S_S_ID": {
+                      "type": "string"
+                    },
+                    "S_S_SEQNO": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "TEE_ID": {
+                      "type": "string"
+                    },
+                    "TEMP": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "THICK_F": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "THICK_T": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/test_method_param": {
+      "get": {
+        "tags": [
+          "test_method_param"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "TEE_ID": {
+                      "type": "string"
+                    },
+                    "TEP_ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/test_parameter_req": {
+      "get": {
+        "tags": [
+          "test_parameter_req"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "EVALUATION": {
+                      "type": "string"
+                    },
+                    "I_S_I": {
+                      "type": "string"
+                    },
+                    "I_S_Q": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "I_TE": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "I_T_F": {
+                      "type": "number"
+                    },
+                    "I_T_I": {
+                      "type": "string"
+                    },
+                    "I_T_T": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "P_I": {
+                      "type": "string"
+                    },
+                    "P_TE_I": {
+                      "type": "string"
+                    },
+                    "THICKNESS_TO": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "T_F": {
+                      "type": "number"
+                    },
+                    "U_ISO": {
+                      "type": "string"
+                    },
+                    "VALUE_MAX": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "VALUE_MIN": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/transport_methods": {
+      "get": {
+        "tags": [
+          "transport_methods"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/inner_coil_diameters": {
+      "get": {
+        "tags": [
+          "inner_coil_diameters"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DIAMETER": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/markings": {
+      "get": {
+        "tags": [
+          "markings"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "CODE": {
+                      "type": "integer"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/test_methods": {
+      "get": {
+        "tags": [
+          "test_methods"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "MASTER_CODE": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "TEST_TYPE": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/STANDARDTESTINSTR": {
+      "get": {
+        "tags": [
+          "STANDARDTESTINSTR"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "INSTRUCTION": {
+                      "type": "string"
+                    },
+                    "PDCODE": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "TEST_STANDARD": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/test_parameters": {
+      "get": {
+        "tags": [
+          "test_parameters"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/units_of_measure": {
+      "get": {
+        "tags": [
+          "units_of_measure"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "BASE_UNIT": {
+                      "type": "string"
+                    },
+                    "CONVERSION_FACTOR": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "ISO_CODE": {
+                      "type": "string"
+                    },
+                    "MASTER_CODE": {
+                      "type": "string"
+                    },
+                    "UOM_ISO_CODE": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "USED_BY_SS": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/PROD_DEL_RESTRICTIONS": {
+      "get": {
+        "tags": [
+          "PROD_DEL_RESTRICTIONS"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "DELIVERY_RESTRICTION": {
+                      "type": "string"
+                    },
+                    "DESCRIPTION": {
+                      "type": "string"
+                    },
+                    "EXTRA_LEADTIME": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "ID": {
+                      "type": "string"
+                    },
+                    "INST_CODE": {
+                      "type": "string",
+                      "format": "nullable"
+                    },
+                    "INTERNAL_USE_ONLY": {
+                      "type": "string"
+                    },
+                    "MANUALLY": {
+                      "type": "string"
+                    },
+                    "PRINTED_ON_ACK": {
+                      "type": "string"
+                    },
+                    "PRINTED_ON_CERT": {
+                      "type": "string"
+                    },
+                    "PRP_ID": {
+                      "type": "string"
+                    },
+                    "REMARK_ALLOWED": {
+                      "type": "string"
+                    },
+                    "STOCK_SEARCH_ALLOWED": {
+                      "type": "string"
+                    },
+                    "TECHNICAL_VETTING": {
+                      "type": "string"
+                    },
+                    "VALID_FOR_DESPATCH": {
+                      "type": "string"
+                    },
+                    "VALID_FOR_INVOICING": {
+                      "type": "string"
+                    },
+                    "VALID_FOR_PRODUCTION": {
+                      "type": "string"
+                    },
+                    "VALID_FOR_TESTING": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/APPL_PARAMETERS": {
+      "get": {
+        "tags": [
+          "APPL_PARAMETERS"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "APC_ID": {
+                      "type": "string"
+                    },
+                    "APTY_ID": {
+                      "type": "string"
+                    },
+                    "PARAM_GROUP": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "PARAM_VALUE": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pf/INTGRUSER.ALLOW_PLANT_TRANS": {
+      "get": {
+        "tags": [
+          "INTGRUSER.ALLOW_PLANT_TRANS"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ORU_ID": {
+                      "type": "string"
+                    },
+                    "SAP_ALLOW_PLANT": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/akid": {
+      "get": {
+        "tags": [
+          "akid"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "CUT_BURR_INSTR": {
+                      "type": "string"
+                    },
+                    "EMB": {
+                      "type": "string"
+                    },
+                    "PLASTN": {
+                      "type": "string"
+                    },
+                    "PROD_MARK_FILM": {
+                      "type": "string"
+                    },
+                    "QUALITY_INDICATOR": {
+                      "type": "string"
+                    },
+                    "STOCK_INDICATOR": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/aordrad": {
+      "get": {
+        "tags": [
+          "aordrad"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "PRODMARKIN": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/aordres": {
+      "get": {
+        "tags": [
+          "aordres"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ID": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/atvidorder": {
+      "get": {
+        "tags": [
+          "atvidorder"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "PRODMARKIN": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/bopsteg": {
+      "get": {
+        "tags": [
+          "bopsteg"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "PROCSTEG": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/bpid": {
+      "get": {
+        "tags": [
+          "bpid"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "PRODTYP": {
+                      "type": "string"
+                    },
+                    "KANT": {
+                      "type": "string"
+                    },
+                    "LEVFORM": {
+                      "type": "string"
+                    },
+                    "SPECKRAV": {
+                      "type": "integer"
+                    },
+                    "YTA": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/atvid": {
+      "get": {
+        "tags": [
+          "atvid"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "STOCK_INDICATOR": {
+                      "type": "string"
+                    },
+                    "QUALITY_INDICATOR": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sys2k/apttut": {
+      "get": {
+        "tags": [
+          "apttut"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "SLABTYP": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "/sys2k/AORDSTOCKIND": {
+      "get": {
+        "tags": [
+          "AORDSTOCKIND"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ANM": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "integer"
+                    },					
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },	
+	
+    "/sys2k/AORDQUALIND": {
+      "get": {
+        "tags": [
+          "AORDQUALIND"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ANM": {
+                      "type": "string"
+                    },
+                    "ID": {
+                      "type": "integer"
+                    },					
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "/sys2k/TCHOSTANDARDTESTINSTR": {
+      "get": {
+        "tags": [
+          "TCHOSTANDARDTESTINSTR"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {										  
+					"INSTRUCTION": {
+							"type": "string"
+						},
+						"PDCODE": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"TEST_STANDARD": {
+							"type": "string"
+						}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },	
+	
+    "/sys2k/TCHOTESTMETHODPARAM": {
+      "get": {
+        "tags": [
+          "TCHOTESTMETHODPARAM"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {										  
+					"TARGET_SAP": {
+						"type": "string"
+					},
+					"TEST_METHOD": {
+						"type": "string"
+					},
+					"TEST_PARAM": {
+						"type": "string"
+					}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },	
+	
+    "/sys2k/TCHOPHOTOMICROGRAPH": {
+      "get": {
+        "tags": [
+          "TCHOPHOTOMICROGRAPH"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {										  
+					"IPB_VALUE": {
+						"type": "integer",
+						"format": "int32"
+					},
+					"PDCODE": {
+						"type": "integer",
+						"format": "int32"
+					}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },		
+	
+    "/sys2k/AEMBLAGER": {
+      "get": {
+        "tags": [
+          "AEMBLAGER"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+					"ANT": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"ANTMAX": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"ANTMIN": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"BESKR": {
+							"type": "string"
+						},
+						"BESTALLARE": {
+							"type": "string"
+						},
+						"BESTDAT": {
+							"type": "string"
+						},
+						"BESTPUNKT": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"DUMMY": {
+							"type": "string",
+							"format": "nullable"
+						},
+						"EMB": {
+							"type": "string"
+						},
+						"FORALDER": {
+							"type": "string"
+						},
+						"HOJD": {
+							"type": "string",
+							"format": "nullable"
+						},
+						"MAXBRD": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"MAXVIKT": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"MINBRD": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"MINVIKT": {
+							"type": "integer",
+							"format": "int32"
+						},
+						"TARA": {
+							"type": "integer",
+							"format": "int32"
+						}				
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }		
+	
+  }
+}
